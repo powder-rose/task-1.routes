@@ -1,9 +1,7 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
 
 * {
-    font-family: "Comfortaa", sans-serif;
+  font-family: "Comfortaa", sans-serif;
 }
 
 .container {
@@ -14,14 +12,25 @@
 }
 
 .buttonsContainer {
-    display: flex;
+  display: flex;
+}
 
+.todoLink {
+  display: block;
+  color: black;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-decoration: none;
+  &:active {
+    color: #ff20a7;
+  }
 }
 
 .editFormContainer {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
 }
 
 .list {
@@ -32,13 +41,13 @@
 }
 
 .listItem {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
   margin: 0.5rem;
   border: 1px solid black;
   border-radius: 20px;
   padding: 1rem;
-  width: 24rem;
+  width: 25rem;
   list-style-type: none;
   background-color: #ffe9f6;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
@@ -52,82 +61,43 @@
   height: 2rem;
   border-radius: 20px;
   text-indent: 1.5rem;
-    margin: 1rem;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-}
-
-.editField {
-    background-color: #ffe9f6;
-    font-size: 0.9em;
-    width: 20rem;
-    border: none;
-    border-bottom: 1px solid black;
+  margin: 1rem;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
 }
 
 .addBtn {
-    width: 10rem;
-    height: 2rem;
-    border-radius: 20px;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
-    &:hover {
-        cursor: pointer;
-        background-color: #ccd6ff;
-    }
+  width: 10rem;
+  height: 2rem;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+  &:hover {
+    cursor: pointer;
+    background-color: #ccd6ff;
+  }
 }
 
 .form {
   display: flex;
   flex-flow: row nowrap;
- justify-content: center;
- align-items: center;
-}
-
-.deleteBtn {
-    margin-left: 0.3rem;
-    box-sizing: border-box;
-    width: 25px;
-    height: 25px;
-    border: none;
-    background-color: transparent;
-    font-size: 1.2em;
-    &:hover {
-        font-weight: 1000;
-        cursor: pointer;
-    }
-}
-
-.editBtn {
-    box-sizing: border-box;
-    border: none;
-    background-color: transparent;
-    background-image: url("icons/icon-pen.png");
-    background-size: contain;
-    width: 20px;
-    height: 20px;
-    background-repeat: no-repeat;
-    &:hover {
-        cursor: pointer;
-    }
-}
-
-.saveBtn {
-    background: transparent;
-    border: none;
-    box-sizing: border-box;
-    cursor: pointer;
-    width: 20px;
-    height: 20px;
-
+  justify-content: center;
+  align-items: center;
 }
 
 .sortBtn {
-    width: 2rem;
-    height: 2rem;
-    margin: 0.5rem;
-    border-radius: 50%;
-    cursor: pointer;
-    &:hover {
-        background-color: #ccd6ff;
-    }
+  width: 2rem;
+  height: 2rem;
+  margin: 0.5rem;
+  border-radius: 50%;
+  cursor: pointer;
+  &:hover {
+    background-color: #ccd6ff;
+  }
+}
 
+.searchField {
+  border-radius: 20px;
+  width: 10rem;
+  height: 2rem;
+  text-indent: 1.5rem;
+  margin: 1rem;
 }

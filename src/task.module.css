@@ -1,0 +1,91 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editField {
+  background-color: #ffe9f6;
+  width: 25rem;
+  box-sizing: border-box;
+  padding: 8px;
+  border: none;
+  border-bottom: 1px solid black;
+  font-size: 1em;
+}
+
+.buttonContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.editingContainer {
+  display: flex;
+  width: 25rem;
+  padding: 1rem;
+  justify-content: center;
+  margin: 0.5rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  background-color: #ffe9f6;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  margin: 0.5rem;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 1rem;
+  width: 25rem;
+  background-color: #ffe9f6;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1);
+}
+
+.deleteBtn {
+  margin-left: 0.3rem;
+  box-sizing: border-box;
+  width: 25px;
+  height: 25px;
+  border: none;
+  background-color: transparent;
+  font-size: 1.2em;
+  &:hover {
+    font-weight: 1000;
+    cursor: pointer;
+  }
+}
+
+.editBtn {
+  box-sizing: border-box;
+  border: none;
+  background-color: transparent;
+  background-image: url("icons/icon-pen.png");
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.saveBtn {
+  background: transparent;
+  border: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+.backBtn {
+  border-radius: 50%;
+  padding: 0.5rem;
+  &:hover {
+    cursor: pointer;
+    background-color: #ccd6ff;
+  }
+}
